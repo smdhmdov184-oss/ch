@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Choco Port — Baku</title>
+<meta name="description" content="Explore the Choco Port menu: chocolate creations, waffles, pancakes, coffee and signature drinks in Baku.">
+<link rel="canonical" href="https://www.example.com/menu.html">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <p class="pre-mark"><span>CHOCO PORT</span></p>
+  <div class="pre-bar"><div class="pre-bar-fill"></div></div>
+</div>
+<div id="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Choco Port</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="reservation.html" class="nav-link">Reservation</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="reservation.html" class="btn btn-ghost-light btn-hide-tablet" data-magnetic data-cursor="">
+        Reserve a Table
+        <svg class="arrow" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <nav class="nav-links" aria-label="Mobile">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="reservation.html" class="nav-link">Reservation</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="mobile-nav-foot">
+    <a href="https://www.instagram.com/chocoport/" target="_blank" rel="noopener">Instagram</a>
+    <a href="contact.html">Location</a>
+    <a href="reservation.html">Reserve a Table</a>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Our Menu</span>
+      <h1 class="headline-xl" style="margin-top:1rem;">Every dessert,<br>a small occasion.</h1>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="wrap">
+      <div class="menu-filters" role="tablist" aria-label="Menu categories">
+        <button class="menu-filter is-active" data-filter="all">All</button>
+        <button class="menu-filter" data-filter="desserts">Desserts</button>
+        <button class="menu-filter" data-filter="waffles">Waffles</button>
+        <button class="menu-filter" data-filter="pancakes">Pancakes</button>
+        <button class="menu-filter" data-filter="chocolate">Chocolate</button>
+        <button class="menu-filter" data-filter="coffee">Coffee</button>
+        <button class="menu-filter" data-filter="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-item" data-category="desserts">
+          <div class="m-thumb"><img data-img="menuThumbDessert" alt="Chocolate dessert" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Chocolate Fondant</h3><span class="m-price">Ask your server</span></div>
+            <p>Warm chocolate fondant with a soft molten center.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="desserts">
+          <div class="m-thumb"><img data-img="menuThumbDessert" alt="House dessert" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>House Signature Dessert</h3><span class="m-price">Ask your server</span></div>
+            <p>Our most-requested creation, made fresh daily.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="waffles">
+          <div class="m-thumb"><img data-img="menuThumbWaffle" alt="Waffle with fruit" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Classic Belgian Waffle</h3><span class="m-price">Ask your server</span></div>
+            <p>Golden waffle finished with seasonal fruit and chocolate sauce.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="waffles">
+          <div class="m-thumb"><img data-img="menuThumbWaffle" alt="Chocolate waffle" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Dark Chocolate Waffle</h3><span class="m-price">Ask your server</span></div>
+            <p>Cocoa waffle layered with rich dark chocolate ganache.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="pancakes">
+          <div class="m-thumb"><img data-img="menuThumbPancake" alt="Stack of pancakes" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Classic Pancake Stack</h3><span class="m-price">Ask your server</span></div>
+            <p>Soft, fluffy pancakes with cream and fresh berries.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="pancakes">
+          <div class="m-thumb"><img data-img="menuThumbPancake" alt="Pancakes with chocolate" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Chocolate Banana Pancakes</h3><span class="m-price">Ask your server</span></div>
+            <p>Pancakes with caramelised banana and warm chocolate sauce.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="chocolate">
+          <div class="m-thumb"><img data-img="menuThumbChocolate" alt="Chocolate creation" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Chocolate Tasting Plate</h3><span class="m-price">Ask your server</span></div>
+            <p>A curated selection of our chocolate creations.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="chocolate">
+          <div class="m-thumb"><img data-img="menuThumbChocolate" alt="Hot chocolate" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Choco Port Hot Chocolate</h3><span class="m-price">Ask your server</span></div>
+            <p>Thick, rich drinking chocolate, served warm.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="coffee">
+          <div class="m-thumb"><img data-img="menuThumbCoffee" alt="Espresso" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Espresso</h3><span class="m-price">Ask your server</span></div>
+            <p>Carefully pulled, full-bodied espresso.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="coffee">
+          <div class="m-thumb"><img data-img="menuThumbCoffee" alt="Cappuccino" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Cappuccino</h3><span class="m-price">Ask your server</span></div>
+            <p>Espresso with silky steamed milk foam.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="drinks">
+          <div class="m-thumb"><img data-img="menuThumbDrink" alt="Special drink" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Choco Port Signature Drink</h3><span class="m-price">Ask your server</span></div>
+            <p>A house specialty, crafted to pair with our desserts.</p>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="drinks">
+          <div class="m-thumb"><img data-img="menuThumbDrink" alt="Iced drink" loading="lazy" decoding="async"></div>
+          <div class="m-body">
+            <div class="m-top"><h3>Iced Chocolate Coffee</h3><span class="m-price">Ask your server</span></div>
+            <p>A cold, refreshing blend of coffee and chocolate.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="menu-note">Menu items and imagery are illustrative. Exact dishes, seasonal availability and prices are confirmed in-café — please ask your server for today's full selection.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <h2 class="headline-xl">Come back<br>for more.</h2>
+      <a href="reservation.html" class="btn btn-ghost-light" data-magnetic data-cursor="">
+        Reserve a Table
+        <svg class="arrow" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col"><h4>Choco Port</h4><a href="menu.html">Menu</a><a href="about.html">About</a><a href="gallery.html">Gallery</a></div>
+      <div class="footer-col"><h4>Visit</h4><a href="reservation.html">Reservation</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Follow</h4><a href="https://www.instagram.com/chocoport/" target="_blank" rel="noopener">Follow the Experience — Instagram</a></div>
+      <div class="footer-col"><h4>Location</h4><p>Baku, Azerbaijan</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Choco Port. All rights reserved.</span>
+      <span>Baku, Azerbaijan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/menu.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Choco Port — Baku</title>
+<meta name="description" content="A visual look at Choco Port — food, interior and moments from our café in Baku.">
+<link rel="canonical" href="https://www.example.com/gallery.html">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="preloader" aria-hidden="true">
+  <p class="pre-mark"><span>CHOCO PORT</span></p>
+  <div class="pre-bar"><div class="pre-bar-fill"></div></div>
+</div>
+<div id="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Choco Port</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="menu.html" class="nav-link">Menu</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="reservation.html" class="nav-link">Reservation</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="reservation.html" class="btn btn-ghost-light btn-hide-tablet" data-magnetic data-cursor="">
+        Reserve a Table
+        <svg class="arrow" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+      <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <nav class="nav-links" aria-label="Mobile">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="menu.html" class="nav-link">Menu</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="reservation.html" class="nav-link">Reservation</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="mobile-nav-foot">
+    <a href="https://www.instagram.com/chocoport/" target="_blank" rel="noopener">Instagram</a>
+    <a href="contact.html">Location</a>
+    <a href="reservation.html">Reserve a Table</a>
+  </div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Gallery</span>
+      <h1 class="headline-xl" style="margin-top:1rem;">A look inside<br>Choco Port.</h1>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="wrap">
+      <div class="gallery-filters" role="tablist" aria-label="Gallery categories">
+        <button class="menu-filter gallery-filter is-active" data-filter="all">All</button>
+        <button class="menu-filter gallery-filter" data-filter="food">Food</button>
+        <button class="menu-filter gallery-filter" data-filter="interior">Interior</button>
+        <button class="menu-filter gallery-filter" data-filter="moments">Moments</button>
+      </div>
+
+      <div class="gallery-grid" aria-label="Photo gallery">
+        <!-- Populated automatically from CHOCO_IMAGES.gallery in js/menu.js -->
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <button class="lightbox-close" aria-label="Close image viewer">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.3"/></svg>
+  </button>
+  <button class="lightbox-prev" aria-label="Previous image">
+    <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M9 1L1 8L9 15" stroke="currentColor" stroke-width="1.3"/></svg>
+  </button>
+  <div class="lightbox-img-wrap"><img src="" alt=""></div>
+  <button class="lightbox-next" aria-label="Next image">
+    <svg width="10" height="16" viewBox="0 0 10 16" fill="none"><path d="M1 1L9 8L1 15" stroke="currentColor" stroke-width="1.3"/></svg>
+  </button>
+  <div class="lightbox-count">1 / 1</div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <h2 class="headline-xl">Come back<br>for more.</h2>
+      <a href="reservation.html" class="btn btn-ghost-light" data-magnetic data-cursor="">
+        Reserve a Table
+        <svg class="arrow" viewBox="0 0 16 10" fill="none"><path d="M1 5H15M15 5L11 1M15 5L11 9" stroke="currentColor" stroke-width="1.3"/></svg>
+      </a>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col"><h4>Choco Port</h4><a href="menu.html">Menu</a><a href="about.html">About</a><a href="gallery.html">Gallery</a></div>
+      <div class="footer-col"><h4>Visit</h4><a href="reservation.html">Reservation</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Follow</h4><a href="https://www.instagram.com/chocoport/" target="_blank" rel="noopener">Follow the Experience — Instagram</a></div>
+      <div class="footer-col"><h4>Location</h4><p>Baku, Azerbaijan</p></div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Choco Port. All rights reserved.</span>
+      <span>Baku, Azerbaijan</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.13/lenis.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/menu.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
