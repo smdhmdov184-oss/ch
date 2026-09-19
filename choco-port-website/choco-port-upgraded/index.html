@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choco Port — Creative Digital Portfolio</title>
+  <meta name="description" content="Choco Port — müasir veb saytlar, rəqəmsal həllər və kreativ layihələr.">
+  <meta name="theme-color" content="#0b0b10">
+  <meta property="og:title" content="Choco Port — Creative Digital Portfolio">
+  <meta property="og:description" content="Modern digital experiences and creative web solutions.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container nav">
+    <a class="logo" href="#home"><span class="logo-dot"></span>CHOCO<span>PORT</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" data-i18n="nav.home">Ana səhifə</a>
+      <a href="#about" data-i18n="nav.about">Haqqımda</a>
+      <a href="#services" data-i18n="nav.services">Xidmətlər</a>
+      <a href="#work" data-i18n="nav.work">Portfolio</a>
+      <a href="#contact" data-i18n="nav.contact">Əlaqə</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-btn active" data-lang="az">AZ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="theme-btn" id="themeBtn" aria-label="Tema dəyiş">☾</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Menyu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero section" id="home">
+  <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <div class="eyebrow"><span></span><span data-i18n="hero.eyebrow">CREATIVE DIGITAL STUDIO</span></div>
+      <h1 data-i18n="hero.title">Fikirləri <em>rəqəmsal</em> təcrübəyə çeviririk.</h1>
+      <p data-i18n="hero.text">Müasir, sürətli və yadda qalan veb layihələr hazırlayırıq. Dizayn, inkişaf və brend təqdimatını bir yerdə.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#work" data-i18n="hero.cta">Portfolioya bax <span>↗</span></a>
+        <a class="btn btn-ghost" href="#contact" data-i18n="hero.contact">Əlaqə saxla</a>
+      </div>
+      <div class="hero-meta"><span>● <b>Fast</b> & responsive</span><span>✦ Modern UI</span><span>⌁ SEO-ready</span></div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="orb orb-main"><div class="orb-inner">CP</div></div>
+      <div class="float-card card-top"><small>DESIGN</small><strong>01</strong></div>
+      <div class="float-card card-bottom"><small>DEVELOPMENT</small><strong>02</strong></div>
+      <div class="grid-lines"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-number">01</span><div><p class="kicker" data-i18n="about.kicker">HAQQIMIZDA</p><h2 data-i18n="about.title">Sadə görünür.<br><em>Güclü işləyir.</em></h2></div></div>
+    <div class="about-grid">
+      <div class="about-text reveal"><p data-i18n="about.text1">Choco Port rəqəmsal layihələri ideyadan istifadəyə hazır məhsula qədər aparan kreativ yanaşmadır.</p><p data-i18n="about.text2">Məqsədimiz yalnız gözəl görünən deyil, ziyarətçiyə aydın mesaj verən və biznes nəticəsinə xidmət edən saytlar yaratmaqdır.</p></div>
+      <div class="stats reveal">
+        <div><strong>24/7</strong><span>Digital focus</span></div><div><strong>100%</strong><span>Responsive</span></div><div><strong>3×</strong><span>Core services</span></div><div><strong>∞</strong><span>Ideas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-number">02</span><div><p class="kicker" data-i18n="services.kicker">XİDMƏTLƏR</p><h2 data-i18n="services.title">Bir ideya.<br><em>Bir neçə imkan.</em></h2></div></div>
+    <div class="service-grid">
+      <article class="service-card reveal"><span class="service-icon">⌘</span><span class="service-no">01</span><h3 data-i18n="services.web">Web Development</h3><p data-i18n="services.webtext">Responsive, sürətli və istifadəçi yönümlü veb saytlar.</p><a href="#contact">↗</a></article>
+      <article class="service-card reveal"><span class="service-icon">◈</span><span class="service-no">02</span><h3 data-i18n="services.ui">UI / UX Design</h3><p data-i18n="services.uitext">Təmiz interfeys, düzgün informasiya arxitekturası və güclü vizual dil.</p><a href="#contact">↗</a></article>
+      <article class="service-card reveal"><span class="service-icon">✦</span><span class="service-no">03</span><h3 data-i18n="services.brand">Digital Branding</h3><p data-i18n="services.brandtext">Brendinizi rəqəmsal mühitdə fərqləndirən vizual təqdimat.</p><a href="#contact">↗</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section work" id="work">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-number">03</span><div><p class="kicker" data-i18n="work.kicker">SEÇİLMİŞ İŞLƏR</p><h2 data-i18n="work.title">İşlər danışır.<br><em>Biz göstəririk.</em></h2></div></div>
+    <div class="filter reveal"><button class="filter-btn active" data-filter="all">All</button><button class="filter-btn" data-filter="web">Web</button><button class="filter-btn" data-filter="design">Design</button><button class="filter-btn" data-filter="brand">Brand</button></div>
+    <div class="portfolio-grid">
+      <article class="project reveal" data-category="web"><div class="project-visual visual-a"><span>WEB</span><b>01</b></div><div class="project-info"><div><h3>Digital Portfolio</h3><p>Web Development</p></div><span>↗</span></div></article>
+      <article class="project reveal" data-category="design"><div class="project-visual visual-b"><span>UI/UX</span><b>02</b></div><div class="project-info"><div><h3>Modern Interface</h3><p>UI / UX Design</p></div><span>↗</span></div></article>
+      <article class="project reveal" data-category="brand"><div class="project-visual visual-c"><span>BRAND</span><b>03</b></div><div class="project-info"><div><h3>Visual Identity</h3><p>Digital Branding</p></div><span>↗</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section process">
+  <div class="container">
+    <div class="section-head reveal"><span class="section-number">04</span><div><p class="kicker">PROCESS</p><h2>İdeyadan<br><em>nəticəyə.</em></h2></div></div>
+    <div class="process-grid">
+      <div class="process-item reveal"><span>01</span><h3>Discover</h3><p>Məqsəd, auditoriya və ehtiyacları müəyyənləşdiririk.</p></div>
+      <div class="process-item reveal"><span>02</span><h3>Design</h3><p>Struktur, vizual dil və istifadəçi axını qurulur.</p></div>
+      <div class="process-item reveal"><span>03</span><h3>Build</h3><p>Responsive və performanslı məhsula çeviririk.</p></div>
+      <div class="process-item reveal"><span>04</span><h3>Launch</h3><p>Test, optimizasiya və yayıma hazırlıq.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="container contact-box reveal">
+    <div><p class="kicker">ƏLAQƏ</p><h2 data-i18n="contact.title">Bir layihə fikrin var?<br><em>Gəlin danışaq.</em></h2><p data-i18n="contact.text">Layihən haqqında qısa məlumat göndər. Növbəti addımı birlikdə müəyyənləşdirək.</p></div>
+    <form id="contactForm">
+      <label>Ad<input type="text" name="name" required placeholder="Adınız"></label>
+      <label>Email<input type="email" name="email" required placeholder="email@example.com"></label>
+      <label>Mesaj<textarea name="message" required rows="4" placeholder="Layihəniz haqqında..."></textarea></label>
+      <button class="btn btn-primary" type="submit">Mesaj göndər <span>↗</span></button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><div class="container footer-inner"><a class="logo" href="#home"><span class="logo-dot"></span>CHOCO<span>PORT</span></a><p>© 2026 Choco Port. All rights reserved.</p><div><a href="#home">Instagram</a><a href="#home">LinkedIn</a><a href="#home">GitHub</a></div></div></footer>
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
