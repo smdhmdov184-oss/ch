@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-white font-sans text-ink antialiased;
+    overflow-x: clip; /* clip (not hidden) keeps position: sticky working on iOS Safari */
+  }
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+  :focus-visible {
+    outline: 2px solid #A2506B;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: #FCE7F3;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+  }
+  .section-y {
+    @apply py-20 sm:py-28 lg:py-36;
+  }
+  .eyebrow {
+    @apply text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-deep;
+  }
+  .display {
+    @apply font-display font-medium leading-[1] tracking-tight text-ink;
+  }
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-colors duration-300 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary {
+    @apply bg-ink text-white hover:bg-deep;
+  }
+  .btn-ghost {
+    @apply border border-line bg-white/70 text-ink hover:border-rose hover:bg-blush;
+  }
+  .field {
+    @apply w-full rounded-2xl border border-line bg-white px-4 py-3.5 text-base text-ink placeholder:text-muted/70 transition-colors focus:border-rose focus:outline-none focus:ring-2 focus:ring-petal/60;
+  }
+  .field[aria-invalid="true"] {
+    @apply border-deep;
+  }
+  /* hover-only reveal, but always visible on touch devices */
+  .cta-reveal {
+    opacity: 1;
+    transform: none;
+  }
+  @media (hover: hover) {
+    .cta-reveal {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    .group:hover .cta-reveal,
+    .group:focus-within .cta-reveal {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
